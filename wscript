@@ -11,5 +11,5 @@ def build(bld):
     bld.program(
         target = 'test',
         source = 'main.cc',
-        cxxflags = ['-g', '-O0', '-Wall', '-I.', '-std=c++11']
+        cxxflags = ['-xobjective-c++', '-g', '-O0', '-Wall', '-fmodules', '-fcxx-modules', '-I.', '-I..', '-std=c++11']
     )
