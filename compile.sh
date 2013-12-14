@@ -1,2 +1,3 @@
-CXX=/home/npeter/Devel/install/bin/clang++ waf configure
-#CXX=/home/npeter/Devel/install/bin/clang waf configure
+#waf clean
+waf build --targets=modules-test
+#waf build --targets=no-modules-test
