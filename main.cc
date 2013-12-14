@@ -1,6 +1,7 @@
 //#define string aaa
 #include <dummy.h>
 #include <IdPool.hh>
+#include <Bug.h>
 //#undef string
 
 class Session : public IdResourceBase<Session>
@@ -39,6 +40,7 @@ private:
 int main()
 {
   App app;
+  Bug<int>::foo();
 
   return 0;
 }

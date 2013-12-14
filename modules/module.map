@@ -9,4 +9,9 @@ module MyLib {
     header "IdPool.hh"
     export *
   }
+  module Bug {
+    requires cplusplus
+    header "Bug.h"
+    export *
+  }
 }
