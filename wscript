@@ -11,5 +11,10 @@ def build(bld):
     bld.program(
         target = 'test',
         source = 'main.cc',
-        cxxflags = ['-g', '-O0', '-Wall', '-fmodules', '-fcxx-modules', '-I.', '-I..', '-I../modules', '-std=c++11']
+        cxxflags = ['-g', '-O0', '-Wall', '-fmodules', '-fcxx-modules', '-fmodules-cache-path=.', '-I.', '-I..', '-I../modules', '-std=c++11']
+    )
+    bld.program(
+        target = 'test2',
+        source = 'main.cc',
+        cxxflags = ['-g', '-O0', '-Wall', '-I.', '-I..', '-I../modules', '-std=c++11']
     )

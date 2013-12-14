@@ -1,5 +1,12 @@
-module dummy {
-  requires cplusplus
-  header "dummy.h"
-  export *
+module MyLib {
+  module dummy {
+    requires cplusplus
+    header "dummy.h"
+    export *
+  }
+  module IdPool {
+    requires cplusplus
+    header "IdPool.hh"
+    export *
+  }
 }
