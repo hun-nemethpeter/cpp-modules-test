@@ -40,7 +40,8 @@ private:
 int main()
 {
   App app;
-  Bug<int>::foo();
+  foo("");
+//  Bug<int>::foo();
 
   return 0;
 }

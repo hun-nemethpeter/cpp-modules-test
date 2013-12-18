@@ -1,9 +1,5 @@
 template <typename T>
-class Bug 
+void foo(const T*)
 {
-public:
-  static void foo()
-  {
-    auto aa = [](T*) { };
-  }
-};
+  auto aa = [](T*) { };
+}
